@@ -1,0 +1,21 @@
+<div class="row no-margin item" [class.completed]="todo.completed">
+  <div class="col-auto align-self-center no-padding todos-row-th">
+    <input
+      type="checkbox"
+      class="checkbox-completed"
+      [checked]="todo.completed"
+      (click)="onToggleComplete()"
+    >
+  </div>
+  <div class="col no-padding">
+    <input
+      type="text"
+      class="input-edit"
+      [(ngModel)]="editInput"
+      (change)="edit()"
+    >
+  </div>
+  <div class="col-auto align-self-center no-padding remove">
+    <span class="btn-remove" (click)="onRemove()">✕</span>
+  </div>
+</div>

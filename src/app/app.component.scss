@@ -1,0 +1,27 @@
+.app-title {
+  font-size: 100px;
+  font-weight: inherit;
+  color: rgba(175, 47, 47, 0.15);
+}
+
+:host /deep/ {
+  input[type="text"] {
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 100;
+    padding: 0;
+
+    &::-webkit-input-placeholder {
+      font-style: italic;
+      font-weight: 100;
+      font-size: inherit;
+      color: #e6e6e6;
+    }
+  }
+
+  input[type="checkbox"] {
+    
+  }
+}
